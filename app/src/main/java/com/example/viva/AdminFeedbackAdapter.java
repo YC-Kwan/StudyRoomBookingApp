@@ -49,7 +49,6 @@ public class AdminFeedbackAdapter extends RecyclerView.Adapter<AdminFeedbackAdap
         final String feedback_date ="Posted on: " + userFeedback.getDate();
         final String feedback_name ="Posted By: " + userFeedback.getUsername();
 
-
         holder.TvFeedback.setText(feedbacks);
         holder.TvDate.setText(feedback_date);
         holder.TvUser.setText(feedback_name);
