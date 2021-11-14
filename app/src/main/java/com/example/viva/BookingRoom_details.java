@@ -618,7 +618,7 @@ public class BookingRoom_details extends AppCompatActivity {
         //if the time equals to userID means the time booked by own users and the button will also set to unable and the button, text color will change too.
         if (time.equals(userID)){
             btn.setEnabled(false);
-            btn.setBackgroundColor(R.drawable.custom_background_grey);
+            btn.setBackgroundColor(Color.parseColor("#8480bb"));
             btn.setTextColor(Color.parseColor("#FFFFFFFF"));
         }
 
