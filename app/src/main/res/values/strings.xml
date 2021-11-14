@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Study Room Booking App</string>
+    <string name="singIn">Login</string>
+    <string name="register">Register</string>
+    <string name="registeruser">Register</string>
+    <string name="user_register">Register as User</string>
+    <string name="admin_register">Register as admin</string>
+
+<!--    login/register-->
+    <string name="loginBtn">Login</string>
+    <string name="tvForgetPass">Forget Password?</string>
+    <string name="registerBtn">Register</string>
+
+    <string name="userHome">Home Page</string>
+    <string name="selectRoom">Select Room</string>
+    <string name="History">History</string>
+    <string name="Feedback">Feedback</string>
+    <string name="Profile">My Profile</string>
+
+    <string name="SelectStudyRoom">Select any study room</string>
+
+    <string name="TimeSlot">Time Slots</string>
+    <string name="Book">Book</string>
+
+    <string name="tvAddFeedback">Add Feedback</string>
+    <string name="btnCancelFeedbackk">Cancel</string>
+    <string name="btnPostFeedback">Post</string>
+    <string name="tvDeleteFeedback">Delete Feedback</string>
+
+
+    <string name="tvProfile">Profile</string>
+    <string name="btnUpdateProfile">Update</string>
+    <string name="btnChangePass">Change Password</string>
+    <string name="btnSavePass">Save</string>
+
+    <string name="AddRoom">Add Room</string>
+    <string name="btnAddRoom">Add</string>
+    <string name="btnUpdateRoom">Update</string>
+    <string name="btnDeleteRoom">Delete</string>
+    <string name="location">Location</string>
+
+
+
+    <!--    //map-->
+    <string name="title_activity_maps">Map</string>
+
+    <string name="Map_button">View Map</string>
+    <string name="Text_Title">Select a Location to show on Google Map</string>
+    <string name="title_activity_select">Select Location</string>
+
+    <string name="Select_button">Select Location</string>
+
+    <string name="Card1">Location 1</string>
+    <string name="Card2">Location 2</string>
+    <string name="Card3">Location 3</string>
+    <string name="Card4">Location 4</string>
+
+    <string name="Location1">INTI International Collage Penang (Current)</string>
+    <string name="Location2">INTI International University Nilai</string>
+    <string name="Location3">INTI International Collage Subang</string>
+    <string name="Location4">INTI Collage Sabah</string>
+
+    <string name="Address1">1-Z, Lebuh Bukit Jambul, Bukit Jambul, 11900 Bayan Lepas, Pulau Pinang</string>
+    <string name="Address2">Bandar Baru Nilai, 71800 Nilai, Negeri Sembilan</string>
+    <string name="Address3">3, Jalan SS 15/8, Ss 15, 47500 Subang Jaya, Selangor</string>
+    <string name="Address4">Lot 17-20, Phase 1B , Phase 3, Jalan Kompleks JKR Taman Putatan Baru, Putatan Point, 88200 Kota Kinabalu, Sabah</string>
+    <string name="Text_Header">Our Branch</string>
+
+
+    <string-array name="date">
+        <item>All History</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

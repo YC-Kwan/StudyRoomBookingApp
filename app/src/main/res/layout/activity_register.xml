@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Register">
+
+
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:textSize="30dp"
+    android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+    <CheckBox
+        android:id="@+id/user_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        android:text="@string/user_register" />
+
+    <CheckBox
+        android:id="@+id/admin_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_checkbox"
+        android:layout_centerInParent="true"
+        android:text="@string/admin_register" />
+
+    <Button
+        android:id="@+id/registeruser"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registeruser"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/admin_checkbox"/>
+
+</LinearLayout>

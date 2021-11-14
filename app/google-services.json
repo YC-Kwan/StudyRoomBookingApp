@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "715075162776",
+    "firebase_url": "https://viva-1bc83-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "viva-1bc83",
+    "storage_bucket": "viva-1bc83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715075162776:android:89c07ab129e667428576ed",
+        "android_client_info": {
+          "package_name": "com.example.viva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715075162776-4f4ph3grv7mik0cfsn0rsrulm3s0jiir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0tR2SSKMjNyDogGg1FslrYd5Zddp1Y3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715075162776-4f4ph3grv7mik0cfsn0rsrulm3s0jiir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
