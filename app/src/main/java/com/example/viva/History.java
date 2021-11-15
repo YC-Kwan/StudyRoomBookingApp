@@ -25,11 +25,12 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class History extends AppCompatActivity {
 
     private TextView tvNoHistoryData;
-    private ArrayList<UserRoom> mRoom = new ArrayList<>();
+    private ArrayList<UserRoom> mRoom;
     private ArrayList<String> spinnerDate = new ArrayList<>();
     private RecyclerView recyclerView;
     private historyAdapter historyAdapter;
@@ -52,6 +53,13 @@ public class History extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         userId = firebaseAuth.getCurrentUser().getUid();
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        mRoom = new ArrayList<>();
+        historyAdapter  = new historyAdapter(History.this, mRoom);
+        recyclerView.setAdapter(historyAdapter);
 
 
         //add a string of text into the spinner date to call user select a date to view the booking history
@@ -141,8 +149,11 @@ public class History extends AppCompatActivity {
                                                 room_time += value.getString("Time " + x) + "\n";
                                             }
 
-                                            addAdapter(study_room, room_time, room_date, room_calendar_date,price, hour_count);
+                                            UserRoom userRoom = new UserRoom(study_room, room_time, room_date, room_calendar_date,price, hour_count);
+
+                                            mRoom.add(userRoom);
                                         }
+                                        historyAdapter.notifyDataSetChanged();
                                     }
                                 });
                             }
@@ -163,16 +174,6 @@ public class History extends AppCompatActivity {
         count++;
     }
 
-    //set the recycler view
-    public void addAdapter(String roomName, String time, String date, String calendar_date,int price, int hour){
-
-        mRoom.add(new UserRoom(roomName, time, date, calendar_date, price, hour));
-
-        historyAdapter = new historyAdapter(History.this, mRoom);
-        recyclerView.setAdapter(historyAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(History.this));
-
-    }
 
     //add date into spinner
     public void addSpinnerDate(String date){
