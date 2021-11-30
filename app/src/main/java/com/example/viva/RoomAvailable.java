@@ -27,7 +27,7 @@ public class RoomAvailable extends AppCompatActivity {
 
     private TextView tvDate;
     private String dateCombine, userID;
-    private ArrayList<Room> mRoom;
+    private List<Room> mRoom;
     private RecyclerView recyclerView;
     private BookingRoomAdapter bookingRoomAdapter;
     FirebaseFirestore db;

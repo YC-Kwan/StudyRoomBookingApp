@@ -27,16 +27,15 @@ import java.util.List;
 
 public class AdapterRoom extends RecyclerView.Adapter<AdapterRoom.PosterListHolder> {
     List<Room> rooms;
-    Activity activity3;
     private Context mContext;
     private String mRoomName = "",mMaxPpl = "",mRoomRules= "";
     private String post_key = "";
     FirebaseFirestore db;
 
 
-    public AdapterRoom(List<Room> rooms, Activity activity3) {
+    public AdapterRoom(List<Room> rooms, Context mContext) {
         this.rooms = rooms;
-        this.activity3= activity3;
+        this.mContext=mContext;
     }
 
     @NonNull
@@ -71,8 +70,8 @@ public class AdapterRoom extends RecyclerView.Adapter<AdapterRoom.PosterListHold
     }
 
     private void updateData() {
-        AlertDialog.Builder myDialog= new AlertDialog.Builder(activity3);
-        LayoutInflater inflater = LayoutInflater.from(activity3);
+        AlertDialog.Builder myDialog= new AlertDialog.Builder(mContext);
+        LayoutInflater inflater = LayoutInflater.from(mContext);
         View mView = inflater.inflate(R.layout.update_layout, null);
 
         myDialog.setView(mView);
@@ -108,8 +107,8 @@ public class AdapterRoom extends RecyclerView.Adapter<AdapterRoom.PosterListHold
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(view.getContext(),"Updated successfully!", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(activity3,AdminRoom.class);
-                        activity3.startActivity(intent);
+                        Intent intent = new Intent(mContext,AdminRoom.class);
+                        mContext.startActivity(intent);
 
                     }
                 });
@@ -125,8 +124,8 @@ public class AdapterRoom extends RecyclerView.Adapter<AdapterRoom.PosterListHold
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(view.getContext(),"Deleted successfully!", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(activity3,AdminRoom.class);
-                            activity3.startActivity(intent);
+                            Intent intent = new Intent(mContext,AdminRoom.class);
+                            mContext.startActivity(intent);
                         }
                     }
                 });

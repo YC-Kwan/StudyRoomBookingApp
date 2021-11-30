@@ -25,18 +25,19 @@ import com.google.firebase.firestore.auth.User;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class BookingRoomAdapter extends RecyclerView.Adapter<BookingRoomAdapter.BookingRoomViewHolder> {
     private Context context;
-    private ArrayList<Room> mRoom;
+    private List<Room> mRoom;
     private String date, dateCombine, userID;
     private Boolean checkCalendar;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
 
-    public BookingRoomAdapter(Context c, ArrayList<Room> room, String d, String dCombine) {
+    public BookingRoomAdapter(Context c, List<Room> room, String d, String dCombine) {
         context = c;
         mRoom = room;
         date = d;
