@@ -68,7 +68,7 @@
 
 
     <string-array name="date">
-        <item>All History</item>
+        <item>Select a date to view the booking history</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

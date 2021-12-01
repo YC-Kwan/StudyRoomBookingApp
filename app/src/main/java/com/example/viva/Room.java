@@ -3,8 +3,6 @@ package com.example.viva;
 public class Room {
 
     private String id, HallNo, maxPerson,Rules;
-    private String  time, date, calendarDate;
-    private int price, hour;
 
     public Room(){
 

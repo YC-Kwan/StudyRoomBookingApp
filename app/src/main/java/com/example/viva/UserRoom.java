@@ -4,7 +4,7 @@ public class UserRoom {
     private String roomName, time, date, calendarDate;
     private int price, hour;
 
-    public  UserRoom(String roomName, String time, String date, String calendar_date, int roomResImg, int price, int hour){ }
+    //public  UserRoom(String roomName, String time, String date, String calendar_date, int roomResImg, int price, int hour){ }
 
     public UserRoom(String roomName, String time, String date, String calendarDate, int price, int hour) {
         this.roomName = roomName;
